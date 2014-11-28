@@ -1,0 +1,91 @@
+fileFormatVersion: 2
+guid: 46faaef2c706fac49994478bcadf9b7a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PlayerShip
+    21300002: EnemyWing
+    21300004: WeaponStart
+    21300006: LifeIcon
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: PlayerShip
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 117
+        width: 99
+        height: 75
+      alignment: 9
+      pivot: {x: .503747821, y: .273512572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemyWing
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 615
+        width: 84
+        height: 85
+      alignment: 9
+      pivot: {x: .50998795, y: .425968677}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: WeaponStart
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 549
+        width: 9
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LifeIcon
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 697
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
