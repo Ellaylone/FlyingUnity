@@ -2,7 +2,7 @@ fileFormatVersion: 2
 guid: 46faaef2c706fac49994478bcadf9b7a
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlayerSheep
+    21300000: PlayerShip
     21300002: EnemyWing
     21300004: WeaponStart
     21300006: LifeIcon
@@ -47,7 +47,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: PlayerSheep
+    - name: PlayerShip
       rect:
         serializedVersion: 2
         x: 224
