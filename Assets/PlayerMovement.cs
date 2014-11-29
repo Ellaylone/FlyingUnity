@@ -32,9 +32,11 @@ public class PlayerMovement : MonoBehaviour {
 
 		//Ship Movement
 		Vector3 pos = transform.position;
-
+		
 		//Change the Y based on input
-		pos.y += Input.GetAxis ("Vertical") * maxSpeed * Time.deltaTime;
+		Vector3 velocity = new Vector3 (0, Input.GetAxis ("Vertical") * maxSpeed * Time.deltaTime, 0);
+
+		pos += rot * velocity;
 
 		//Set position
 		transform.position = pos; 
