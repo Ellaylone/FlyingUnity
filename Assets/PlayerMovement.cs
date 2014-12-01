@@ -3,8 +3,8 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 
-	float maxSpeed = 5f; //Max movement speed
-	float rotSpeed = 180f; //Max rotation speed
+	public float maxSpeed = 5f; //Max movement speed
+	public float rotSpeed = 180f; //Max rotation speed
 
 	// Use this for initialization
 	void Start () {
