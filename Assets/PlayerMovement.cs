@@ -40,11 +40,24 @@ public class PlayerMovement : MonoBehaviour {
 		pos += rot * velocity;
 
 		//Restrict the player to the camera's boundaries
+		//Vertical bound
 		if (pos.y + shipBoundaryRadius > Camera.main.orthographicSize) {
 			pos.y = Camera.main.orthographicSize - shipBoundaryRadius;
 		}
 		if (pos.y - shipBoundaryRadius < -Camera.main.orthographicSize) {
 			pos.y = -Camera.main.orthographicSize + shipBoundaryRadius;
+		}
+
+		//Calculate orthographic width based on screen ratio
+		float screenRatio = (float)Screen.width / (float)Screen.height;
+		float widthOrtho = Camera.main.orthographicSize * screenRatio;
+
+		//Horizontal bounds
+		if (pos.x + shipBoundaryRadius > widthOrtho) {
+			pos.x = widthOrtho - shipBoundaryRadius;
+		}
+		if (pos.x - shipBoundaryRadius < -widthOrtho) {
+			pos.x = -widthOrtho + shipBoundaryRadius;
 		}
 
 		//Set position
