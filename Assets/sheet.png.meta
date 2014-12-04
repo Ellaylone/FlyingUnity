@@ -4,7 +4,7 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: PlayerShip
     21300002: EnemyWing
-    21300004: WeaponStart
+    21300004: BulletSimple
     21300006: LifeIcon
   serializedVersion: 2
   mipmaps:
@@ -67,7 +67,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: .50998795, y: .425968677}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WeaponStart
+    - name: BulletSimple
       rect:
         serializedVersion: 2
         x: 856
