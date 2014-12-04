@@ -5,7 +5,8 @@ public class DamageHandler : MonoBehaviour {
 
 	public int health = 1;
 
-	public float invulnTimer = 0.5f;
+	public float invulnPeriod = 0;
+	float invulnTimer = 0;
 	int correctLayer;
 
 	void Start(){
@@ -16,7 +17,7 @@ public class DamageHandler : MonoBehaviour {
 	void OnTriggerEnter2D(){
 
 		health--;
-
+		invulnTimer = invulnPeriod;
 		gameObject.layer = 10;
 	}
 
