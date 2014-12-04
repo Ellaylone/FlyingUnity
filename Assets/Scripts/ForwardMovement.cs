@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BulletMovement : MonoBehaviour {
+public class ForwardMovement : MonoBehaviour {
 
 	public float maxSpeed = 5f;
 	
