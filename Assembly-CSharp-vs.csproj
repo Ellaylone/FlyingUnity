@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\DamageHandler.cs" />
+     <Compile Include="Assets\Scripts\EnemyShooting.cs" />
      <Compile Include="Assets\Scripts\FacesPlayer.cs" />
      <Compile Include="Assets\Scripts\ForwardMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
