@@ -49,6 +49,7 @@
      <Compile Include="Assets\BulletMovement.cs" />
      <Compile Include="Assets\CameraFollow.cs" />
      <Compile Include="Assets\DamageHandler.cs" />
+     <Compile Include="Assets\FacesPlayer.cs" />
      <Compile Include="Assets\PlayerMovement.cs" />
      <Compile Include="Assets\PlayerShooting.cs" />
      <Compile Include="Assets\SelfDestruct.cs" />

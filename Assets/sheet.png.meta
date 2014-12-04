@@ -64,8 +64,8 @@ TextureImporter:
         y: 615
         width: 84
         height: 85
-      alignment: 9
-      pivot: {x: .50998795, y: .425968677}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: BulletSimple
       rect:
