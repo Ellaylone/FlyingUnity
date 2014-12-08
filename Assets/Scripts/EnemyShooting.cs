@@ -6,10 +6,14 @@ public class EnemyShooting : MonoBehaviour {
 	public GameObject bulletPrefab;
 	
 	public Vector3 bulletOffset = new Vector3 (0, 0.5f, 0);
-	
+
+	int bulletLayer;
 	float cooldownTimer = 0;
 	public float fireDelay = 0.5f;
-	
+
+	void Start() {
+		bulletLayer = gameObject.layer;
+	}
 	// Update is called once per frame
 	void Update () {
 		cooldownTimer -= Time.deltaTime;
@@ -20,7 +24,7 @@ public class EnemyShooting : MonoBehaviour {
 			Vector3 offset = transform.rotation * bulletOffset;
 			
 			GameObject bulletGO = (GameObject) Instantiate(bulletPrefab, transform.position + offset, transform.rotation);
-			bulletGO.layer = gameObject.layer;		
+			bulletGO.layer = bulletLayer;		
 		}
 	}
 }

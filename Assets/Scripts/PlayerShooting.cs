@@ -7,8 +7,14 @@ public class PlayerShooting : MonoBehaviour {
 
 	public Vector3 bulletOffset = new Vector3 (0, 0.5f, 0);
 
+	int bulletLayer;
+
 	float cooldownTimer = 0;
 	public float fireDelay = 0.25f;
+
+	void Start() {
+		bulletLayer = gameObject.layer;
+	}
 
 	// Update is called once per frame
 	void Update () {
@@ -19,7 +25,8 @@ public class PlayerShooting : MonoBehaviour {
 
 			Vector3 offset = transform.rotation * bulletOffset;
 
-			Instantiate(bulletPrefab, transform.position + offset, transform.rotation);
+			GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, transform.position + offset, transform.rotation);
+			bulletGO.layer = bulletLayer;
 		}
 	}
 }
