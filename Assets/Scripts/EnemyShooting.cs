@@ -11,13 +11,25 @@ public class EnemyShooting : MonoBehaviour {
 	float cooldownTimer = 0;
 	public float fireDelay = 0.5f;
 
+	Transform player;
+
 	void Start() {
 		bulletLayer = gameObject.layer;
 	}
 	// Update is called once per frame
 	void Update () {
+		if (player == null) {
+			//Find player's ship
+			GameObject ps = GameObject.FindWithTag("Player");
+			
+			if(ps != null) {
+				player = ps.transform;
+			}
+		}
+
 		cooldownTimer -= Time.deltaTime;
-		if (cooldownTimer <= 0) {
+
+		if (cooldownTimer <= 0 && player != null && Vector3.Distance(transform.position, player.position) < 5) {
 			//Shoot!
 			cooldownTimer = fireDelay;
 			

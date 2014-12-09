@@ -49,10 +49,12 @@
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\DamageHandler.cs" />
      <Compile Include="Assets\Scripts\EnemyShooting.cs" />
+     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\FacesPlayer.cs" />
      <Compile Include="Assets\Scripts\ForwardMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerShooting.cs" />
+     <Compile Include="Assets\Scripts\PlayerSpawner.cs" />
      <Compile Include="Assets\Scripts\SelfDestruct.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
